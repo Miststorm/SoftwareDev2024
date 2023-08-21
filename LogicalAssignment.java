@@ -1,6 +1,3 @@
-public class LogicalAssignment {
-    
-}
 /*Which of these sentences are propositions? What are the truth values of those that are propositions?
 Boston is the capital of Massachusetts.  Proposition: True.
 
