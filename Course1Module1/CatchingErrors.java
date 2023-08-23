@@ -1,3 +1,4 @@
+package Course1Module1;
 public class CatchingErrors {
     //Some test code
     public static void main (String[] args) {

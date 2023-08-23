@@ -1,3 +1,4 @@
+package Course1Module1;
 public class Truthtables {
     public static void main(String[] args) {
         boolean A = false;

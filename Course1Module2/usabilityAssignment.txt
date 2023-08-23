@@ -1,0 +1,96 @@
+Site - Amazon:
+
+     Pros:
+
+          There's a lot of sections, so it's easier for the user to find what they're looking for.
+
+          The site uses bright colors to call attention to the items they're trying to highlight. Specifically, the sign-in page is emphasized.
+
+          The site uses a clear and interpretable navbar in order to fit  as much information as possible in a small amount of space
+
+          The site has the most commonly visited parts of the site. This make it easier to find what you're looking for based on what everyone else has looked for.
+
+     Cons:
+
+          The site has many different sections. This can overwhelm the user with an overload of information.
+
+          The color scheme is somewhat overwhelming, with any color basically anywhere on the screen.
+
+          The quantity of sections can also be a downside because it's easier to get lost, or not be able to find something super specific.
+
+           Though there's a search bar for the products, there isn't one for specific settings or features of the site.
+
+          Though the site has a lot of features, it doesn't seem like they really call attention to them that much, instead calling attention to features that not many will ever use.
+
+
+
+
+Site - thebiguglywebsite:
+
+     Cons:
+
+
+          The purpose of the site isn't initially clear. This makes it difficult to read and interpret how to use the site.
+
+          Many of the links in the site do not work. this makes it significantly more difficult to use the site properly, and they may as well not be there
+
+          The colors do not work well with each other, and this makes the site unpleasant to look at.
+
+
+          The image links are not valid, and as a result, every image on the site returns with an error. This contributes to a terrible usability as the user doesn't know what the images are.
+
+
+          The images overlap, meaning that a user wouldn't be able to tell what is on one of the images. This makes it very hard to use the site.
+
+          The text is mostly quite small, and therefore difficult to look at. This hurts the usability as it means the information on the site is harder to read.
+
+
+          None of the site's features are organized, which means it's very difficult to navigate it. This makes it a lot less usable simply because of how hard it is to get around the site.
+
+
+          The font size is all mostly the same. This makes it extremely difficult to use, as the user won't know what is most important and what the site maker wants to call attention to.
+
+
+          Everything is underlined. This is redundant and means that it's no longer a useful tool to call attention to something. This has the same problem as the text size, and makes the site harder to use.
+
+
+          All the images are different sizes. This makes the smaller images harder to view for the user, and it makes the larger images take up too much space. As such, the user can't see other important parts of the site.
+
+
+
+
+
+Site - Best Buy
+
+
+    Pros:
+
+
+          The top bar is a different color than the rest of the site, drawing attention to it and making it easier to know where to go.
+
+          The site has a search bar, allowing users to look for specific items on the site. It's also in a very obvious location.
+
+
+          The font sizes are all pretty different, being differently sized by order of priority. This allows the user to see what's most important on the site.
+
+
+          Any external links have the text color in blue. This makes it clear to the user that clicking this link will take them off the home page.
+
+
+          The top bar is pretty simple, which makes it easier to not be overwhelmed by information. This makes it easier for the user to view because they can see only what's absolutely necessary.
+
+          Though the site has advertisements, they are in an out of the way location that doesn't distract from the use of the site.
+
+
+          The user can sort and organize search results based on certain criteria. This makes it much easier to find what they're looking for.
+
+     Cons:
+
+
+          Any extra features this site has aren't going to be known to users that first visit because of the simple UI, but that's an effect of having a simpler navbar.
+
+
+          It's not very easy to search for things in certain categories. Instead, everything's just sort of out there.
+
+
+          The site may be bland to some users, as it really only consists of 2 colors on the whole site, which are white and blue. The use of only these colors could also confuse users with how many things one color are being used to denote.
