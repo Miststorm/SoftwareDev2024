@@ -1,4 +1,4 @@
-package Course1Module1;
+package Course1.Course1Module1;
 public class operators {
     public static void main(String[] args) {
         int num = 17 / 2 + 4;
