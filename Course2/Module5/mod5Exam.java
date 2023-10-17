@@ -20,7 +20,6 @@ public class mod5Exam {
 
 			user = input.nextInt();
 		}
-		
 		if (user == 1) {
 			printExam();
 		}
@@ -45,6 +44,34 @@ public class mod5Exam {
 	 *         Number of F's: 8
 	 */
 	public static void printExam() {
+		Scanner input = new Scanner(System.in);
+		int a = 0;
+		int b = 0;
+		int c = 0;
+		int d = 0;
+		int f = 0;
+		String scores;
+		System.out.print("Enter Scores Seperated by Spaces (Example: 28.54 38.2 95.18): ");
+		scores = input.nextLine();
+		String[] scoresList = scores.split(" ");
+		double average = 0;
+		for (int i=0; i<scoresList.length; i++) {
+			average += Double.valueOf(scoresList[i]);
+			if (Double.valueOf(scoresList[i]) < 60) {
+				f += 1;
+			} else if (Double.valueOf(scoresList[i]) < 70) {
+				d += 1;
+			} else if (Double.valueOf(scoresList[i]) < 80) {
+				c += 1;
+			} else if (Double.valueOf(scoresList[i]) < 90) {
+				b += 1;
+			} else {
+				a += 1;
+			}
+		}
+		average /= scoresList.length;
+		System.out.printf("The average was: %.2f\n", average);
+		System.out.printf("There were:\n%d A's\n%d B's\n%d C's\n%d D's\n%d F's", a, b, c, d, f);
 		
 	}
 	
@@ -76,6 +103,7 @@ public class mod5Exam {
 	public static void trackAtt() {
 		Scanner input  = new Scanner(System.in);
 		int att[][] = new int[5][5];
+		int finalAtt[][] = new int[5][5];
 		int days = 0;
 		
 		// Ask how many days they would like to take attendance for
@@ -102,8 +130,8 @@ public class mod5Exam {
                 String [] outVarList = outVarString.split("");
                 for (int i = 0; i < outVarString.length(); i++) {
                     att[r][i] = Integer.valueOf(outVarList[i]);
+					finalAtt[r][i] += Integer.valueOf((outVarList[i]));
                 }
-
 			}
 
             System.out.println("\nDay " + (d+1) + " Attendance: ");
@@ -119,6 +147,18 @@ public class mod5Exam {
             
             System.out.println("\n\n");
 		}
-        		
+		System.out.println("Total Attendance for " + (days) + " days");
+		System.out.println("|--------------------------------|");
+        for (int j = 0; j < finalAtt.length; j++) {
+            System.out.print("|  ");
+            for (int g=0; g<finalAtt[j].length; g++) {
+                System.out.print("[ " + (finalAtt[j][g]) + "]  ");
+            }
+            System.out.println("|");
+        }
+        System.out.println("|________________________________|");
+        
+        System.out.println("\n\n");
+		
 	}
 }
