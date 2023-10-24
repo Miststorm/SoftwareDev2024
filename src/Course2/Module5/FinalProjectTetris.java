@@ -1,32 +1,37 @@
 package src.Course2.Module5;
+import java.lang.Thread;
+import com.googlecode.lanterna.TerminalSize;
+import com.googlecode.lanterna.TextColor;
+import com.googlecode.lanterna.gui2.*;
+import com.googlecode.lanterna.screen.Screen;
+import com.googlecode.lanterna.screen.TerminalScreen;
+import com.googlecode.lanterna.terminal.DefaultTerminalFactory;
+import com.googlecode.lanterna.terminal.Terminal;
+import java.io.IOException;
+import java.util.Arrays;
 
 public class FinalProjectTetris {
     public static int[][] gameboard = new int[10][15];
-    public static void main(String[] args) {
-        
-        boolean x = true;
-        print(printNormal(gameboard));
-        gameboard[0][0] = 1;
-        while (true) {
-            /*
-            if (x) {
-                
-                x = false;
-            } else if (!x) {
-                gameboard[0][1] = 0;
-                x = true;
-            }
-            */
-            print(replacePrint(gameboard));
-            try {
-                Thread.sleep(5000);
-              } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
-              }
-        
-        }
-        
-        
+    public static void main(String[] args) throws IOException {
+           // Setup terminal and screen layers
+           Terminal terminal = new DefaultTerminalFactory().createTerminal();
+           Screen screen = new TerminalScreen(terminal);
+           screen.startScreen();
+   
+           // Create panel to hold components
+           Panel panel = new Panel();
+
+           Label label = new Label("Hello!!");
+            label.addTo(panel);
+           // Create window to hold the panel
+           BasicWindow window = new BasicWindow();
+           window.setHints(Arrays.asList(Window.Hint.FULL_SCREEN, Window.Hint.NO_DECORATIONS));
+           window.setComponent(panel);
+   
+           // Create gui and start gui
+           MultiWindowTextGUI gui = new MultiWindowTextGUI(screen, new DefaultWindowManager(), new EmptySpace(TextColor.ANSI.BLUE));
+           gui.addWindowAndWait(window);
+   
     }
 
     //Print the Board
@@ -34,21 +39,9 @@ public class FinalProjectTetris {
         String result = "";
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[i].length; j++) {
-                result += board[i][i];
+                result += board[i][j];
             }
             result += "\n";
-        }
-        return result;
-    }
-
-    public static String replacePrint(int[][] board) {
-        String result = "";
-        
-        for (int i = 0; i < board.length; i++) {
-            result += "\r";
-            for (int j = 0; j < board[i].length; j++) {
-                result += board[i][i];
-            }
         }
         return result;
     }
