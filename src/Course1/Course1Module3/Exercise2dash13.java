@@ -1,4 +1,4 @@
-package src.Course1.Course1Module3;
+package Course1.Course1Module3;
 import java.util.Scanner;
 public class Exercise2dash13 {
     public static void main(String[] args) {

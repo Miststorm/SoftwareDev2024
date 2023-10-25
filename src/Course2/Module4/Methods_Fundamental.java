@@ -1,4 +1,4 @@
-package src.Course2.Module4;
+package Course2.Module4;
 
 public class Methods_Fundamental {
     static void addNumbers(int first, int second) {

@@ -1,4 +1,4 @@
-package src.Course1.Course1Module1;
+package Course1.Course1Module1;
 public class Truthtables {
     public static void main(String[] args) {
         boolean A = false;

@@ -1,4 +1,4 @@
-package src.Course2.Module2;
+package Course2.Module2;
 
 /*
 Author: Jared Bishop

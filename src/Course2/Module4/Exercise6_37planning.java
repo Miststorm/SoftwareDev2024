@@ -19,7 +19,7 @@ This one seemed simple enough so I ended up just writing the whole thing instead
 
 
 
-package src.Course2.Module4;
+package Course2.Module4;
 import java.util.Scanner;
 
 public class Exercise6_37planning {

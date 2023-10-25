@@ -1,4 +1,4 @@
-package src.Course2.Module5;
+package Course2.Module5;
 import java.util.Arrays;
 public class arrays_fundamental {
     public static void main(String[] args) {

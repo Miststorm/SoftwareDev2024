@@ -1,4 +1,4 @@
-package src.Course1.Course1Module3;
+package Course1.Course1Module3;
 public class Exercise1dash9 {
     public static void main(String[] args) {
         double width = 4.5;

@@ -8,7 +8,7 @@ Sample input/output:
 	income = $2000.00,  expense = $800.00,  months = 3, savings = $3600.00
 	income = $2000.00,  expense = $800.00,  months = 6, savings = $7200.00
 */
-package src.Course2.Module4;
+package Course2.Module4;
 import java.util.Scanner;
 class Module4QuizPt1 {
 	public static void main(String[] args) {

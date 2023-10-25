@@ -1,4 +1,4 @@
-package src.Course2.Module4;
+package Course2.Module4;
 
 import java.util.Scanner;
 

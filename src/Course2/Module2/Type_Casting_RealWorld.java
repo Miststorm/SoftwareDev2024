@@ -1,4 +1,4 @@
-package src.Course2.Module2;
+package Course2.Module2;
 
 public class Type_Casting_RealWorld {
     public static void main(String[] args) {

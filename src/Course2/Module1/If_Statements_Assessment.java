@@ -1,4 +1,4 @@
-package src.Course2.Module1;
+package Course2.Module1;
 
 public class If_Statements_Assessment {
     public static void main(String[] args) {

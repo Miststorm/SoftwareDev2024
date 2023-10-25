@@ -1,4 +1,4 @@
-package src.Course2.Module3;
+package Course2.Module3;
 import java.util.Scanner;
 public class WhileLoopsRealWorld {
     public static void main(String[] args) {

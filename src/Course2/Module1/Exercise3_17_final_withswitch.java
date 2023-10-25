@@ -1,4 +1,4 @@
-package src.Course2.Module1;
+package Course2.Module1;
 import java.util.Random;
 import java.util.Scanner;
 public class Exercise3_17_final_withswitch {

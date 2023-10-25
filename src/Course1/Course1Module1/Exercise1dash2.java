@@ -1,4 +1,4 @@
-package src.Course1.Course1Module1;
+package Course1.Course1Module1;
 public class Exercise1dash2 {
     public static void main(String[] args) {
         boolean p = true;

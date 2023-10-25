@@ -1,4 +1,4 @@
-package src.Course2.Module2;
+package Course2.Module2;
 import java.util.Scanner;
 import java.lang.Math;
 public class Exercise4_5Final {

@@ -1,4 +1,4 @@
-package src.Course2.Module3;
+package Course2.Module3;
 
 public class Exercise5_3Implementation {
     public static void main(String[] args) {

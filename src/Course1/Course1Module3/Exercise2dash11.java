@@ -1,4 +1,4 @@
-package src.Course1.Course1Module3;
+package Course1.Course1Module3;
 import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.Scanner;
