@@ -18,5 +18,29 @@ if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
     start code .
     Start-Sleep 3
     Get-CimInstance win32_process -Filter "Name like 'conhost.exe'" | ? { (Get-Process -id $_.ParentProcessId -ea Ignore) -eq $null } | Select-Object ProcessId | ? { Stop-Process $_.ProcessId -Force }
-    exit
 }
+#Modify Path to the picture accordingly to reflect your infrastructure
+$imgPath="C:\Users\student\Documents\SoftwareDev2024\wallpaper.jpg"
+$code = @' 
+using System.Runtime.InteropServices; 
+namespace Win32{ 
+    
+     public class Wallpaper{ 
+        [DllImport("user32.dll", CharSet=CharSet.Auto)] 
+         static extern int SystemParametersInfo (int uAction , int uParam , string lpvParam , int fuWinIni) ; 
+         
+         public static void SetWallpaper(string thePath){ 
+            SystemParametersInfo(20,0,thePath,3); 
+         }
+    }
+ } 
+'@
+
+add-type $code 
+
+#Apply the Change on the system 
+[Win32.Wallpaper]::SetWallpaper($imgPath)
+
+exit
+
+

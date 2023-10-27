@@ -34,7 +34,7 @@ public class Tetris {
 
         panel.addComponent(new EmptySpace(new TerminalSize(0,0))); // Empty space underneath labels
         panel.addComponent(new Button("Submit"));
-
+        
         // Create window to hold the panel
         BasicWindow window = new BasicWindow();
         window.setComponent(panel);
