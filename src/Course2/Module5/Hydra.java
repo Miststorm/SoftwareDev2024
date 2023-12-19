@@ -3,8 +3,6 @@ import java.lang.Thread;
 import java.io.IOException;
 import java.util.Arrays;
 
-import javax.xml.bind.Marshaller.Listener;
-
 import com.googlecode.lanterna.TerminalSize;
 import com.googlecode.lanterna.TextColor;
 import com.googlecode.lanterna.gui2.*;
@@ -17,9 +15,10 @@ import com.googlecode.lanterna.terminal.swing.AWTTerminalFontConfiguration;
 import com.googlecode.lanterna.terminal.swing.SwingTerminal;
 import com.googlecode.lanterna.terminal.swing.SwingTerminalFontConfiguration;
 
+import javafx.event.ActionEvent;
 import javafx.scene.text.Font;
 
-public class Tetris {
+public class Hydra {
     public static int[][] gameboard = new int[20][15];
     
     public static void main(String[] args) throws IOException {
@@ -50,14 +49,16 @@ public class Tetris {
         // Create gui and start gui
         MultiWindowTextGUI gui = new MultiWindowTextGUI(screen, new DefaultWindowManager(), new EmptySpace(TextColor.ANSI.BLUE));
         gui.addWindowAndWait(window);
-        
-        
-        
 
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            @Override
+            public void windowClosing(java.awt.event.WindowEvent windowEvent) {
+                new Window
+            }
+        })
 
     }
 
-    
 
     //Print the Board
     
