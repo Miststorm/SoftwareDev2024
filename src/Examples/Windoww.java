@@ -2,55 +2,64 @@ package Examples;
 
 import java.io.IOException;
 import javax.swing.*;
+import javax.swing.border.EmptyBorder;
+
+import javafx.scene.text.Font;
+
+import java.awt.Color;
+import java.awt.FlowLayout;
+import java.awt.Graphics;
+import java.awt.Insets;
 
 public class Windoww extends JFrame{
+
+    
     public static int windowcount = 0;
         public Windoww() {
-        super("Windowwwww!");
-        int width = java.awt.Toolkit.getDefaultToolkit().getScreenSize().width;
-        int height = java.awt.Toolkit.getDefaultToolkit().getScreenSize().height;
-        int x = (int) (Math.random() * (width - 300));
-        int y = (int) (Math.random() * (height - 150));
-        setLocation(x, y);
-        setSize(300, 150);
+        super("Tetris!");
+        setBackground(Color.BLACK);
+        getContentPane().setBackground(Color.BLACK);
+        setLocation(50, 50);
+        setSize(325, 600);
         setVisible(true);
-        JLabel label = new JLabel("Don't close this window!");
-        label.setHorizontalAlignment(JLabel.CENTER);
-        getContentPane().add(label);
+
+
+
+        JPanel panel = new JPanel(new FlowLayout(FlowLayout.CENTER, -5, -5));
+        
+
+        float size = 28;
+        String board[] = generateBoard();
+        
+        for (int l=0; l < board.length; l++) {
+            JLabel label = new JLabel(board[l]);
+            label.setFont(label.getFont().deriveFont(size));
+            label.setForeground(Color.GRAY);
+            label.setBorder(new EmptyBorder(new Insets(-5, -5, -5, -5)));
+            panel.add(label);
+            
+        }
+        add(panel);
+        
+        
+
+    }
     
-        addWindowListener(new java.awt.event.WindowAdapter() {
-            @Override
-            public void windowClosing(java.awt.event.WindowEvent windowEvent) {
-                new Windoww();
-                new Windoww();
-                windowcount += 2;
-            }
-        });
-    }
-    //if task is killed by task manager, print "hello"
-    static {
-        Runtime.getRuntime().addShutdownHook(new Thread() {
-            @Override
-            public void run() {
-                try {
-                    JavaW.run("Windoww");
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-                for (int i = 0; i < windowcount; i++) {
-                    new Windoww();
-                }
-                new Windoww();
-            }
-        });
-    }
     public static void main(String[] args) throws IOException {
         JavaW.run("Windoww");
         new Windoww();
     }
-    //check if window is unfocused
-    public static boolean isWindowFocused() {
-        System.out.println(java.awt.Window.getWindows()[0].isFocused());
-        return java.awt.Window.getWindows()[0].isFocused();
+
+    public static String[] generateBoard() {
+        int boardWidth = 10;
+        int boardHeight = 15;
+        String[] board=new String[boardHeight];
+        for (int i = 0; i < boardHeight; i++ ) {
+            board[i] = "";
+            for (int j = 0; j < boardWidth; j++) {
+                board[i] += "█";
+            }
+        }
+        return board;
     }
 }
