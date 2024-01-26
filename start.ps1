@@ -10,7 +10,6 @@ if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
     Invoke-WebRequest -Uri "https://winget.azureedge.net/cache/source.msix" -OutFile "source.msix"
     Add-AppxPackage -Path ".\source.msix"
     winget install Microsoft.VisualStudioCode --accept-package-agreements --accept-source-agreements --override '/SILENT /mergetasks="!runcode,addcontextmenufiles,addcontextmenufolders,addtopath"'
-    winget install git.git --accept-package-agreements --accept-source-agreements --override '/SILENT 
     Set-Location "C:\Users\student\Documents"
     git clone https://github.com/Miststorm/SoftwareDev2024
     git config --global user.name "Jared Bishop"
