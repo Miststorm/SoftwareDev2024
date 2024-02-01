@@ -29,12 +29,30 @@ public class Windoww {
             JFrame frame = new JFrame();
             frame.setBounds(100,100,300,300);
             double sizeVar[][] = {{0.25, 0.25, 0.25, 0.25}, {50, TableLayout.FILL, 40, 40, 40}};
+        
+            String[][] board = generateBoard();
+            
             
             frame.setLayout(new TableLayout(sizeVar));
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-            JLabel label = new JLabel("Hi");
-            frame.add(label, "1, 1");
+
+            for (int l=0; l < board.length; l++) {
+                JPanel panel = new JPanel(new FlowLayout(FlowLayout.CENTER, -2, 0));
+                for (int m=0; m < board[l].length; m++) {
+                    
+                    JLabel label = new JLabel(board[l][m]);
+                    label.setForeground(Color.GRAY);
+                    label.setBorder(new EmptyBorder(new Insets(0, 0, 0, 0)));
+                    panel.add(label);
+                }
+                String stringl = Integer.toString(l);
+                frame.add(panel, "0, " + stringl);
+            }
+
+            
+            
+            
             frame.setVisible(true);
 
             float size = 28;
@@ -56,22 +74,7 @@ public class Windoww {
                 }
             }
     */
-    /*
-            JPanel panel2 = new JPanel();
-            for (int l=0; l < board.length; l++) {
-                JPanel panel = new JPanel(new FlowLayout(FlowLayout.CENTER, -2, 0));
-                for (int m=0; m < board[l].length; m++) {
-                    
-                    JLabel label = new JLabel(board[l][m]);
-                    label.setFont(label.getFont().deriveFont(size));
-                    label.setForeground(Color.GRAY);
-                    label.setBorder(new EmptyBorder(new Insets(0, 0, 0, 0)));
-                    panel.add(label);
-                }
-                panel2.add(panel);
-            }
-            frame.add(panel2); 
-*/
+
     }
     public static void main(String[] args) throws IOException {
         JavaW.run("Windoww");
